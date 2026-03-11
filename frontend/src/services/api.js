@@ -4,9 +4,14 @@ const API = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
 });
 
-export const addDesign = (data) => API.post("/", data);
+export const addDesign = (data) =>
+  API.post("", data, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
 
-export const getDesigns = () => API.get("/");
+export const getDesigns = () => API.get("");
 
 export const deleteDesign = (id) => API.delete(`/${id}`);
 
