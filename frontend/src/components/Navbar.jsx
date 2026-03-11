@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaPlusCircle, FaList, FaPalette } from "react-icons/fa";
+import { FaPlusCircle, FaList  } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
@@ -14,7 +14,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <h1 className="flex items-center gap-2 text-lg sm:text-xl font-bold text-white">
-          <FaPalette className="text-yellow-300 text-xl sm:text-2xl" />
+         
           <span className="tracking-wide">RAJ MOHAN TEX</span>
         </h1>
 
