@@ -35,10 +35,13 @@ export default function DesignCard({ design, onDelete, onUpdate }) {
       <div className="relative group">
 
         <img
-          src={`https://design-manager-3.onrender.com/uploads/${design.image}`}
-          onError={(e) => (e.target.src = "/no-image.png")}
+          src={
+            design.image
+              ? `https://design-manager-3.onrender.com/uploads/${design.image}`
+              : "/no-image.png"
+          }
           alt="design"
-          className="h-48 sm:h-52 md:h-56 w-full object-cover"
+          className="h-48 w-full object-cover"
         />
 
         {/* Stock Badge */}
