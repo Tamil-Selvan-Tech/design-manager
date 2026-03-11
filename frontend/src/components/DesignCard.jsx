@@ -35,12 +35,8 @@ export default function DesignCard({ design, onDelete, onUpdate }) {
       <div className="relative group">
 
         <img
-          src={
-            design.image
-              ? `https://design-manager-3.onrender.com/uploads/${design.image}`
-              : "/no-image.png"
-          }
-          alt="design"
+          src=
+           {design.image} alt="design" 
           className="h-48 w-full object-cover"
         />
 
